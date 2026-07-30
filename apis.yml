@@ -1,7 +1,30 @@
 aid: misterbnb
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/misterbnb.png
 name: MisterBnB
-description: MisterBnB is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  misterb&b (operated by SFO84 inc.) is the world's largest LGBTQ-focused travel
+  and accommodation booking platform, connecting gay and queer travelers with
+  LGBTQ-friendly rentable lodging including private rooms, apartments, hotels,
+  and homestays across more than 200,000 cities worldwide. Founded in Paris in
+  2014 by Matthieu Jost, François de Landes, Marc Dedonder, and Julien Delon and
+  now headquartered in San Francisco, the company was surfaced as a portfolio
+  company of 500 Global. Enrichment found no public developer/API surface: the
+  consumer site is Cloudflare-protected (403 to non-browser clients), the
+  github.com/misterbnb organization holds only open-source Ruby/JS forks, and no
+  well-known, OpenAPI, SDK, or MCP artifacts are published. Host-partner
+  connectivity is offered indirectly via channel managers such as Guesty rather
+  than a documented public API.
 url: https://raw.githubusercontent.com/api-evangelist/misterbnb/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +34,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Travel
+- Accommodation
+- Booking
+- Vacation Rental
+- Marketplace
+- LGBTQ
+- Hospitality
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +52,15 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://misterbandb.com
+  url: https://www.misterbandb.com
+- type: GitHubOrganization
+  url: https://github.com/misterbnb
+- type: DomainSecurity
+  url: security/misterbnb-domain-security.yml
+- type: WellKnown
+  url: well-known/misterbnb-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
