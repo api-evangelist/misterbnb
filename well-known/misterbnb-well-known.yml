@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of well-known paths on misterb&b host
+host: www.misterbandb.com
+probes:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+notes: No well-known documents published. misterb&b is a consumer LGBTQ accommodation
+  booking platform (SFO84 inc.) with no public developer/API surface; site returns
+  403 to non-browser clients (Cloudflare).
